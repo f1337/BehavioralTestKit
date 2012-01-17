@@ -20,7 +20,7 @@
 
 
 
-- (BOOL)ensure;
+- (BOOL)ensure:(id)me;
 
 
 
