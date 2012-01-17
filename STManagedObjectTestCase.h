@@ -8,19 +8,23 @@
 //  cribbed from:
 //  https://github.com/mbrugger/CoreDataDependentProperties/blob/master/LPAutomatedObserving/Tests/ManagedObjectSenTestCase.h
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-    #import <Foundation/Foundation.h>
-    #import <CoreData/CoreData.h>
-#endif
 
+
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 #import <SenTestingKit/SenTestingKit.h>
+
 
 
 @interface STManagedObjectTestCase : SenTestCase 
 
-@property (retain,nonatomic) NSPersistentStoreCoordinator *coordinator;
-@property (retain,nonatomic) NSManagedObjectContext *context;
-@property (retain,nonatomic) NSManagedObjectModel *model;
+
+
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSPersistentStoreCoordinator *coordinator;
+@property (nonatomic, retain) NSManagedObjectContext *context;
+@property (nonatomic, retain) NSManagedObjectModel *model;
+
 
 
 @end

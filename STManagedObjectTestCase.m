@@ -13,6 +13,9 @@
 
 @implementation STManagedObjectTestCase
 
+
+
+@synthesize bundleIdentifier;
 @synthesize coordinator;
 @synthesize context;
 @synthesize model;
@@ -23,49 +26,27 @@
 {
 	@try
 	{
-		NSBundle* bundle = [NSBundle bundleWithIdentifier:@"com.carbonmolecule.LocationsTests"];
-		//NSLog(@"bundle: %@", bundle);
+		NSBundle* bundle = [NSBundle bundleWithIdentifier:[self bundleIdentifier]];
+//		NSBundle* bundle = [NSBundle bundleWithIdentifier:@"com.carbonmolecule.LocationsTests"];
 		NSString* path = [bundle pathForResource:@"Locations" ofType:@"momd"];
-		//NSLog(@"path: %@", path);
 		NSURL* modelURL = [NSURL URLWithString:path];
 		self.model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-//        self.model = [NSManagedObjectModel mergedModelFromBundles:nil];    
 		
 		self.coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.model];
 		
-		NSLog(@"create persistent store");
-		// create persistent store
-		NSString* tempFilePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"modeltest"];
-		
-		NSFileManager  * fileManager = [NSFileManager defaultManager];
 		NSError* error = nil;
-		if (![fileManager fileExistsAtPath:tempFilePath])
-        {
-            STAssertTrue([fileManager createDirectoryAtPath:tempFilePath withIntermediateDirectories: YES attributes:nil error:&error], @"error creating temp dir: %@", error);
-        }
-        
-		
-		NSString *persistentStoreFileString = [tempFilePath stringByAppendingPathComponent:@"test.sqlite"];
-		if ([fileManager fileExistsAtPath:persistentStoreFileString])
-		{
-			[fileManager removeItemAtPath:persistentStoreFileString error:&error];
-		}
-		
-		
-		[self.coordinator addPersistentStoreWithType:NSSQLiteStoreType 
+
+		[self.coordinator addPersistentStoreWithType:NSInMemoryStoreType 
 									   configuration:nil 
-												 URL:[NSURL fileURLWithPath:persistentStoreFileString] 
+												 URL:nil 
 											 options:nil 
 											   error:&error];
-		
-		NSLog(@"create context");	
+
 		NSManagedObjectContext* tempContext = [[NSManagedObjectContext alloc] init];
 		
 		
 		[tempContext setPersistentStoreCoordinator:coordinator];
-        
-//		[tempContext prepareDependentProperties];	
-		
+        		
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 		tempContext.undoManager = [[NSUndoManager alloc] init];
 #endif
@@ -80,7 +61,6 @@
 
 -(void) tearDown
 {
-	NSLog(@"BEGIN: ManagedObjectSenTestCase tearDown");
 	@try
 	{
 		self.context= nil;
@@ -95,7 +75,6 @@
 		@throw(e);
 		
 	}
-	NSLog(@"END: ManagedObjectSenTestCase tearDown");
 }
 
 
