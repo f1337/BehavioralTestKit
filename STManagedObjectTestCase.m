@@ -44,10 +44,6 @@
 
 		[tempContext setPersistentStoreCoordinator:coordinator];
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-		tempContext.undoManager = [[NSUndoManager alloc] init];
-#endif
-
 		self.context = tempContext;
 	}
 	@catch (NSException * e)
