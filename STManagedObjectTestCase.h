@@ -21,7 +21,6 @@
 
 
 @property (nonatomic, retain) NSString *bundleIdentifier;
-//@property (nonatomic, retain) NSPersistentStoreCoordinator *coordinator;
 @property (nonatomic, retain) NSManagedObjectContext *context;
 
 

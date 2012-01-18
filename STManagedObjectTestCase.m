@@ -16,7 +16,6 @@
 
 
 @synthesize bundleIdentifier;
-//@synthesize coordinator;
 @synthesize context;
 
 
