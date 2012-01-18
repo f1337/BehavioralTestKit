@@ -20,8 +20,9 @@
 
 
 
-@property (nonatomic, retain) NSString *bundleIdentifier;
-- (NSManagedObjectContext *)contextForResource:(NSString *)resourceName ofType:(NSString *)resourceType;
+- (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
+                                          withResource:(NSString *)resourceName
+                                                ofType:(NSString *)resourceType;
 
 
 

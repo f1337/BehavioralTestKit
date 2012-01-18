@@ -15,13 +15,11 @@
 
 
 
-@synthesize bundleIdentifier;
-
-
-
-- (NSManagedObjectContext *)contextForResource:(NSString *)resourceName ofType:(NSString *)resourceType
+- (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
+                                          withResource:(NSString *)resourceName
+                                                ofType:(NSString *)resourceType
 {
-		NSBundle* bundle = [NSBundle bundleWithIdentifier:[self bundleIdentifier]];
+		NSBundle* bundle = [NSBundle bundleWithIdentifier:bundleIdentifier];
 		NSString* path = [bundle pathForResource:resourceName ofType:resourceType];
 		NSURL* modelURL = [NSURL URLWithString:path];
 		NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
