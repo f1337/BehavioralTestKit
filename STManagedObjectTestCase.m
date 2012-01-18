@@ -31,9 +31,9 @@
 		NSString* path = [bundle pathForResource:@"Locations" ofType:@"momd"];
 		NSURL* modelURL = [NSURL URLWithString:path];
 		self.model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-		
+
 		self.coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.model];
-		
+
 		NSError* error = nil;
 
 		[self.coordinator addPersistentStoreWithType:NSInMemoryStoreType 
@@ -43,14 +43,14 @@
 											   error:&error];
 
 		NSManagedObjectContext* tempContext = [[NSManagedObjectContext alloc] init];
-		
-		
+
+
 		[tempContext setPersistentStoreCoordinator:coordinator];
-        		
+
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 		tempContext.undoManager = [[NSUndoManager alloc] init];
 #endif
-		
+
 		self.context = tempContext;
 	}
 	@catch (NSException * e)
@@ -73,19 +73,18 @@
 		//NSLog(@"%@", [e callStackSymbols]);
 		NSLog(@"context reset failed!");
 		@throw(e);
-		
 	}
 }
 
 
--(void) testSetup
-{
-	STAssertNotNil(self.model, @"error loading model");
-	STAssertNotNil(self.coordinator, @"error loading coordinator");
-	STAssertNotNil(self.context, @"error loading context");
-	
-	NSArray* allEntities = [model entities];
-	STAssertTrue(allEntities.count > 0, @"no entities in bundle!");	
-}
+//-(void) testSetup
+//{
+//	STAssertNotNil(self.model, @"error loading model");
+//	STAssertNotNil(self.coordinator, @"error loading coordinator");
+//	STAssertNotNil(self.context, @"error loading context");
+//	
+//	NSArray* allEntities = [model entities];
+//	STAssertTrue(allEntities.count > 0, @"no entities in bundle!");	
+//}
 
 @end

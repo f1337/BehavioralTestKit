@@ -8,18 +8,20 @@
 
 
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "MFFragment.h"
 
 
 
-@interface MFThen : SenTestCase
+@interface MFThen : MFFragment
 
 
 
-@property (nonatomic, assign) id delegate;
-
-
-
+/*!
+ * HACK-TASTIC! "Scope-hijacking"
+ * Passing a SenTestCase subclass' "self" reference into the local scope as "self",
+ * thereby tricking any ST assertion macros run here into executing in the
+ * SenTestCase subclass' scope.
+ */
 - (BOOL)ensure:(id)me;
 
 

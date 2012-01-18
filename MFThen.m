@@ -16,10 +16,6 @@
 
 
 
-@synthesize delegate;
-
-
-
 - (BOOL)ensure:(id)me
 {
     return NO;
