@@ -16,16 +16,13 @@
 
 
 @synthesize bundleIdentifier;
-@synthesize context;
 
 
 
--(void) setUp
+- (NSManagedObjectContext *)contextForResource:(NSString *)resourceName ofType:(NSString *)resourceType
 {
-	@try
-	{
 		NSBundle* bundle = [NSBundle bundleWithIdentifier:[self bundleIdentifier]];
-		NSString* path = [bundle pathForResource:@"Locations" ofType:@"momd"];
+		NSString* path = [bundle pathForResource:resourceName ofType:resourceType];
 		NSURL* modelURL = [NSURL URLWithString:path];
 		NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
 
@@ -44,38 +41,9 @@
 
 		[tempContext setPersistentStoreCoordinator:coordinator];
 
-		self.context = tempContext;
-	}
-	@catch (NSException * e)
-	{
-		STAssertTrue(e == nil, @"error - %@", e);
-	}
-}
-
--(void) tearDown
-{
-	@try
-	{
-		self.context= nil;
-	}
-	@catch (NSException * e)
-	{
-		NSLog(@"%@",e);
-		//NSLog(@"%@", [e callStackSymbols]);
-		NSLog(@"context reset failed!");
-		@throw(e);
-	}
+        return tempContext;
 }
 
 
-//-(void) testSetup
-//{
-//	STAssertNotNil(self.model, @"error loading model");
-//	STAssertNotNil(self.coordinator, @"error loading coordinator");
-//	STAssertNotNil(self.context, @"error loading context");
-//	
-//	NSArray* allEntities = [model entities];
-//	STAssertTrue(allEntities.count > 0, @"no entities in bundle!");	
-//}
 
 @end

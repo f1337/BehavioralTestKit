@@ -21,7 +21,7 @@
 
 
 @property (nonatomic, retain) NSString *bundleIdentifier;
-@property (nonatomic, retain) NSManagedObjectContext *context;
+- (NSManagedObjectContext *)contextForResource:(NSString *)resourceName ofType:(NSString *)resourceType;
 
 
 
