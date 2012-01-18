@@ -18,7 +18,6 @@
 @synthesize bundleIdentifier;
 @synthesize coordinator;
 @synthesize context;
-@synthesize model;
 
 
 
@@ -27,12 +26,11 @@
 	@try
 	{
 		NSBundle* bundle = [NSBundle bundleWithIdentifier:[self bundleIdentifier]];
-//		NSBundle* bundle = [NSBundle bundleWithIdentifier:@"com.carbonmolecule.LocationsTests"];
 		NSString* path = [bundle pathForResource:@"Locations" ofType:@"momd"];
 		NSURL* modelURL = [NSURL URLWithString:path];
-		self.model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+		NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
 
-		self.coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.model];
+		self.coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
 
 		NSError* error = nil;
 
@@ -64,7 +62,6 @@
 	@try
 	{
 		self.context= nil;
-		self.model = nil;
 		self.coordinator = nil;
 	}
 	@catch (NSException * e)
