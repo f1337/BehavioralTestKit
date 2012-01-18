@@ -16,7 +16,7 @@
 
 
 @synthesize bundleIdentifier;
-@synthesize coordinator;
+//@synthesize coordinator;
 @synthesize context;
 
 
@@ -30,11 +30,11 @@
 		NSURL* modelURL = [NSURL URLWithString:path];
 		NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
 
-		self.coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+		NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
 
 		NSError* error = nil;
 
-		[self.coordinator addPersistentStoreWithType:NSInMemoryStoreType 
+		[coordinator addPersistentStoreWithType:NSInMemoryStoreType 
 									   configuration:nil 
 												 URL:nil 
 											 options:nil 
@@ -62,7 +62,6 @@
 	@try
 	{
 		self.context= nil;
-		self.coordinator = nil;
 	}
 	@catch (NSException * e)
 	{
