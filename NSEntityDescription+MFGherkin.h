@@ -1,22 +1,15 @@
 //
-//  STManagedObjectTestCase.h
+//  NSEntityDescription+MFGherkin.h
 //  Locations
 //
-//  Created by Michael Fleet on 1/16/12.
+//  Created by Michael Fleet on 1/17/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-//  cribbed from:
-//  https://github.com/mbrugger/CoreDataDependentProperties/blob/master/LPAutomatedObserving/Tests/ManagedObjectSenTestCase.h
-
-
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import <SenTestingKit/SenTestingKit.h>
 
-
-
-@interface STManagedObjectTestCase : SenTestCase 
+@interface NSEntityDescription(MFGherkin)
 
 
 
