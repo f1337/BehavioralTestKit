@@ -20,6 +20,13 @@
 
 
 
+- (id)insertNewObjectForEntityForName:(NSString *)entityName
+                 withBundleIdentifier:(NSString *)bundleIdentifier
+                          andResource:(NSString *)resourceName
+                               ofType:(NSString *)resourceType;
+
+
+
 - (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
                                           withResource:(NSString *)resourceName
                                                 ofType:(NSString *)resourceType;

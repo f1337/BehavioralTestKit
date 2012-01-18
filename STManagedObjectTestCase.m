@@ -15,6 +15,17 @@
 
 
 
+- (id)insertNewObjectForEntityForName:(NSString *)entityName
+                 withBundleIdentifier:(NSString *)bundleIdentifier
+                          andResource:(NSString *)resourceName
+                               ofType:(NSString *)resourceType
+{
+    NSManagedObjectContext *context = [self contextForBundleIdentifier:@"com.carbonmolecule.LocationsTests" withResource:@"Locations" ofType:@"momd"];
+    return [NSEntityDescription insertNewObjectForEntityForName:@"CMTrap" inManagedObjectContext:context];
+}
+
+
+
 - (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
                                           withResource:(NSString *)resourceName
                                                 ofType:(NSString *)resourceType
