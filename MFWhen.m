@@ -16,10 +16,6 @@
 
 
 
-@synthesize delegate;
-
-
-
 - (void)occur
 {
     

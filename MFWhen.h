@@ -8,15 +8,11 @@
 
 
 
-#import "STManagedObjectTestCase.h"
+#import "MFFragment.h"
 
 
 
-@interface MFWhen : STManagedObjectTestCase
-
-
-
-@property (nonatomic, assign) id delegate;
+@interface MFWhen : MFFragment
 
 
 
