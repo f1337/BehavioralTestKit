@@ -45,33 +45,4 @@
 
 
 
-- (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
-                                          withResource:(NSString *)resourceName
-                                                ofType:(NSString *)resourceType
-{
-		NSBundle* bundle = [NSBundle bundleWithIdentifier:bundleIdentifier];
-		NSString* path = [bundle pathForResource:resourceName ofType:resourceType];
-		NSURL* modelURL = [NSURL URLWithString:path];
-		NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-
-		NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
-
-		NSError* error = nil;
-
-		[coordinator addPersistentStoreWithType:NSInMemoryStoreType 
-									   configuration:nil 
-												 URL:nil 
-											 options:nil 
-											   error:&error];
-
-		NSManagedObjectContext* tempContext = [[NSManagedObjectContext alloc] init];
-
-
-		[tempContext setPersistentStoreCoordinator:coordinator];
-
-        return tempContext;
-}
-
-
-
 @end

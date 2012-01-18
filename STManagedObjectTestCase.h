@@ -27,10 +27,4 @@
 
 
 
-- (NSManagedObjectContext *)contextForBundleIdentifier:(NSString *)bundleIdentifier
-                                          withResource:(NSString *)resourceName
-                                                ofType:(NSString *)resourceType;
-
-
-
 @end
