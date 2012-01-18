@@ -20,8 +20,27 @@
                           andResource:(NSString *)resourceName
                                ofType:(NSString *)resourceType
 {
-    NSManagedObjectContext *context = [self contextForBundleIdentifier:@"com.carbonmolecule.LocationsTests" withResource:@"Locations" ofType:@"momd"];
-    return [NSEntityDescription insertNewObjectForEntityForName:@"CMTrap" inManagedObjectContext:context];
+    NSBundle* bundle = [NSBundle bundleWithIdentifier:bundleIdentifier];
+    NSString* path = [bundle pathForResource:resourceName ofType:resourceType];
+    NSURL* modelURL = [NSURL URLWithString:path];
+    NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+    
+    NSError* error = nil;
+    
+    [coordinator addPersistentStoreWithType:NSInMemoryStoreType 
+                              configuration:nil 
+                                        URL:nil 
+                                    options:nil 
+                                      error:&error];
+    
+    NSManagedObjectContext* context = [[NSManagedObjectContext alloc] init];
+    
+    
+    [context setPersistentStoreCoordinator:coordinator];
+    
+    return [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:context];
 }
 
 
