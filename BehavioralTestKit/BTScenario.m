@@ -3,7 +3,7 @@
 //  Locations
 //
 //  Created by Michael Fleet on 1/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Michael R. Fleet. All rights reserved.
 //
 
 
