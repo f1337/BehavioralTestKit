@@ -1,5 +1,5 @@
 //
-//  MFFragment.m
+//  BTWhen.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,15 +8,15 @@
 
 
 
-#import "MFFragment.h"
+#import "BTFragment.h"
 
 
 
-@implementation MFFragment
+@interface BTWhen : BTFragment
 
 
 
-@synthesize delegate;
+- (void)occur;
 
 
 

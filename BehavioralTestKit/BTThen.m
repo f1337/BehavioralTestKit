@@ -1,5 +1,5 @@
 //
-//  MFWhen.h
+//  BTThen.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,15 +8,18 @@
 
 
 
-#import "MFFragment.h"
+#import "BTThen.h"
 
 
 
-@interface MFWhen : MFFragment
+@implementation BTThen
 
 
 
-- (void)occur;
+- (BOOL)ensure:(id)me
+{
+    return NO;
+}
 
 
 

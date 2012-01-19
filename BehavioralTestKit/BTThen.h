@@ -1,5 +1,5 @@
 //
-//  MFThen.h
+//  BTThen.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,11 +8,11 @@
 
 
 
-#import "MFFragment.h"
+#import "BTFragment.h"
 
 
 
-@interface MFThen : MFFragment
+@interface BTThen : BTFragment
 
 
 

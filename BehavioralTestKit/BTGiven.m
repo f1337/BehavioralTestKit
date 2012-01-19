@@ -1,5 +1,5 @@
 //
-//  MFGiven.h
+//  BTGiven.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,12 +8,19 @@
 
 
 
-#import "MFFragment.h"
+#import "BTGiven.h"
 
 
 
-@interface MFGiven : MFFragment
+@implementation BTGiven
 
-- (void)setUp;
+
+
+- (void)setUp
+{
+    
+}
+
+
 
 @end

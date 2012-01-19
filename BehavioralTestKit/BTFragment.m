@@ -1,5 +1,5 @@
 //
-//  MFFragment.h
+//  BTFragment.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,15 +8,15 @@
 
 
 
-#import <OCMock/OCMock.h>
+#import "BTFragment.h"
 
 
 
-@interface MFFragment : NSObject
+@implementation BTFragment
 
 
 
-@property (nonatomic, assign) id delegate;
+@synthesize delegate;
 
 
 

@@ -1,14 +1,14 @@
 //
-//  NSEntityDescription+MFGherkin.m
+//  NSEntityDescription+BTGherkin.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/17/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "NSEntityDescription+MFGherkin.h"
+#import "NSEntityDescription+BTGherkin.h"
 
-@implementation NSEntityDescription(MFGherkin)
+@implementation NSEntityDescription(BTGherkin)
 
 
 

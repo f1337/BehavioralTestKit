@@ -1,5 +1,5 @@
 //
-//  MFScenario.h
+//  BTScenario.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/17/12.
@@ -13,6 +13,6 @@
 
 
 
-@interface MFScenario : SenTestCase
+@interface BTScenario : SenTestCase
 - (void)executeScenario:(NSString *)scenario;
 @end

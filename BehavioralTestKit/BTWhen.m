@@ -1,5 +1,5 @@
 //
-//  MFWhen.m
+//  BTWhen.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,11 +8,11 @@
 
 
 
-#import "MFWhen.h"
+#import "BTWhen.h"
 
 
 
-@implementation MFWhen
+@implementation BTWhen
 
 
 

@@ -1,5 +1,5 @@
 //
-//  NSEntityDescription+MFGherkin.h
+//  NSEntityDescription+BTGherkin.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/17/12.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@interface NSEntityDescription(MFGherkin)
+@interface NSEntityDescription(BTGherkin)
 
 
 

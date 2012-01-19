@@ -1,5 +1,5 @@
 //
-//  MFGiven.m
+//  BTFragment.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,18 +8,15 @@
 
 
 
-#import "MFGiven.h"
+#import <OCMock/OCMock.h>
 
 
 
-@implementation MFGiven
+@interface BTFragment : NSObject
 
 
 
-- (void)setUp
-{
-    
-}
+@property (nonatomic, assign) id delegate;
 
 
 

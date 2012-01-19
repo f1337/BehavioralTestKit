@@ -1,5 +1,5 @@
 //
-//  MFScenario.m
+//  BTScenario.m
 //  Locations
 //
 //  Created by Michael Fleet on 1/17/12.
@@ -8,14 +8,14 @@
 
 
 
-#import "MFScenario.h"
-#import "MFGiven.h"
-#import "MFWhen.h"
-#import "MFThen.h"
+#import "BTScenario.h"
+#import "BTGiven.h"
+#import "BTWhen.h"
+#import "BTThen.h"
 
 
 
-@implementation MFScenario
+@implementation BTScenario
 
 
 

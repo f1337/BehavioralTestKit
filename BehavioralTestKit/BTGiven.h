@@ -1,5 +1,5 @@
 //
-//  MFThen.m
+//  BTGiven.h
 //  Locations
 //
 //  Created by Michael Fleet on 1/16/12.
@@ -8,19 +8,12 @@
 
 
 
-#import "MFThen.h"
+#import "BTFragment.h"
 
 
 
-@implementation MFThen
+@interface BTGiven : BTFragment
 
-
-
-- (BOOL)ensure:(id)me
-{
-    return NO;
-}
-
-
+- (void)setUp;
 
 @end
