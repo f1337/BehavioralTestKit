@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BehavioralTestKit' target in the 'BehavioralTestKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
