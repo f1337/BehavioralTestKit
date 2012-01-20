@@ -1,5 +1,5 @@
 //
-//  AppendButterToStringFeature.m
+//  AppendMutableStringFeature.m
 //  BehavioralTestKit
 //
 //  Created by Michael Fleet on 1/18/12.
@@ -12,7 +12,7 @@
 
 
 
-@interface AppendButterToStringFeature : BTScenario
+@interface AppendMutableStringFeature : BTScenario
 
 @property (nonatomic, retain) NSMutableString *theString;
 
@@ -20,7 +20,7 @@
 
 
 
-@implementation AppendButterToStringFeature
+@implementation AppendMutableStringFeature
 
 
 

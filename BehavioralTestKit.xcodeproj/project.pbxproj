@@ -11,7 +11,7 @@
 		AC61F00714C8FF1F0038A162 /* AMutableStringAlmond.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61EFFF14C8FF1F0038A162 /* AMutableStringAlmond.m */; };
 		AC61F00814C8FF1F0038A162 /* AMutableStringApple.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00014C8FF1F0038A162 /* AMutableStringApple.m */; };
 		AC61F00914C8FF1F0038A162 /* AMutableStringPeanut.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00114C8FF1F0038A162 /* AMutableStringPeanut.m */; };
-		AC61F00A14C8FF1F0038A162 /* AppendButterToStringFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00214C8FF1F0038A162 /* AppendButterToStringFeature.m */; };
+		AC61F00A14C8FF1F0038A162 /* AppendMutableStringFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00214C8FF1F0038A162 /* AppendMutableStringFeature.m */; };
 		AC61F00B14C8FF1F0038A162 /* EnsureTheStringIsAlmondButter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00314C8FF1F0038A162 /* EnsureTheStringIsAlmondButter.m */; };
 		AC61F00C14C8FF1F0038A162 /* EnsureTheStringIsAppleButter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00414C8FF1F0038A162 /* EnsureTheStringIsAppleButter.m */; };
 		AC61F00D14C8FF1F0038A162 /* EnsureTheStringIsPeanutButter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61F00514C8FF1F0038A162 /* EnsureTheStringIsPeanutButter.m */; };
@@ -52,7 +52,7 @@
 		AC61EFFF14C8FF1F0038A162 /* AMutableStringAlmond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMutableStringAlmond.m; path = "Append Butter To String.feature/AMutableStringAlmond.m"; sourceTree = "<group>"; };
 		AC61F00014C8FF1F0038A162 /* AMutableStringApple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMutableStringApple.m; path = "Append Butter To String.feature/AMutableStringApple.m"; sourceTree = "<group>"; };
 		AC61F00114C8FF1F0038A162 /* AMutableStringPeanut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMutableStringPeanut.m; path = "Append Butter To String.feature/AMutableStringPeanut.m"; sourceTree = "<group>"; };
-		AC61F00214C8FF1F0038A162 /* AppendButterToStringFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppendButterToStringFeature.m; path = "Append Butter To String.feature/AppendButterToStringFeature.m"; sourceTree = "<group>"; };
+		AC61F00214C8FF1F0038A162 /* AppendMutableStringFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppendMutableStringFeature.m; path = "Append Butter To String.feature/AppendMutableStringFeature.m"; sourceTree = "<group>"; };
 		AC61F00314C8FF1F0038A162 /* EnsureTheStringIsAlmondButter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnsureTheStringIsAlmondButter.m; path = "Append Butter To String.feature/EnsureTheStringIsAlmondButter.m"; sourceTree = "<group>"; };
 		AC61F00414C8FF1F0038A162 /* EnsureTheStringIsAppleButter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnsureTheStringIsAppleButter.m; path = "Append Butter To String.feature/EnsureTheStringIsAppleButter.m"; sourceTree = "<group>"; };
 		AC61F00514C8FF1F0038A162 /* EnsureTheStringIsPeanutButter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnsureTheStringIsPeanutButter.m; path = "Append Butter To String.feature/EnsureTheStringIsPeanutButter.m"; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		ACEB1EA514C7C017005EDB1A /* BehavioralTestKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACEB1ED914C7C325005EDB1A /* Append Butter To String.feature */,
+				ACEB1ED914C7C325005EDB1A /* Append Mutable String.feature */,
 				ACEB1EA614C7C017005EDB1A /* Supporting Files */,
 			);
 			path = BehavioralTestKitTests;
@@ -182,10 +182,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ACEB1ED914C7C325005EDB1A /* Append Butter To String.feature */ = {
+		ACEB1ED914C7C325005EDB1A /* Append Mutable String.feature */ = {
 			isa = PBXGroup;
 			children = (
-				AC61F00214C8FF1F0038A162 /* AppendButterToStringFeature.m */,
+				AC61F00214C8FF1F0038A162 /* AppendMutableStringFeature.m */,
 				AC61EFFF14C8FF1F0038A162 /* AMutableStringAlmond.m */,
 				AC61F00014C8FF1F0038A162 /* AMutableStringApple.m */,
 				AC61F00114C8FF1F0038A162 /* AMutableStringPeanut.m */,
@@ -194,7 +194,7 @@
 				AC61F00414C8FF1F0038A162 /* EnsureTheStringIsAppleButter.m */,
 				AC61F00514C8FF1F0038A162 /* EnsureTheStringIsPeanutButter.m */,
 			);
-			name = "Append Butter To String.feature";
+			name = "Append Mutable String.feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +329,7 @@
 				AC61F00714C8FF1F0038A162 /* AMutableStringAlmond.m in Sources */,
 				AC61F00814C8FF1F0038A162 /* AMutableStringApple.m in Sources */,
 				AC61F00914C8FF1F0038A162 /* AMutableStringPeanut.m in Sources */,
-				AC61F00A14C8FF1F0038A162 /* AppendButterToStringFeature.m in Sources */,
+				AC61F00A14C8FF1F0038A162 /* AppendMutableStringFeature.m in Sources */,
 				AC61F00B14C8FF1F0038A162 /* EnsureTheStringIsAlmondButter.m in Sources */,
 				AC61F00C14C8FF1F0038A162 /* EnsureTheStringIsAppleButter.m in Sources */,
 				AC61F00D14C8FF1F0038A162 /* EnsureTheStringIsPeanutButter.m in Sources */,
