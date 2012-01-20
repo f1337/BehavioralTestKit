@@ -46,7 +46,12 @@
     {
         NSString *className = [self classNameFromScenarioFragment:fragment];
         id fragmentObject = [[NSClassFromString(className) alloc] init];
-        
+
+        if ( ! fragmentObject )
+        {
+            STFail(@"Scenario fragment '%@' is undefined.", className);
+        }
+
         [fragmentObject setDelegate:self];
         
         if ( [fragmentObject respondsToSelector:@selector(setUp)] )

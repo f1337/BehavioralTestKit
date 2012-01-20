@@ -1,5 +1,5 @@
 //
-//  EnsureSomeOutcome.m
+//  EnsureTheStringIsPeanutButter.m
 //  BehavioralTestKit
 //
 //  Created by Michael Fleet on 1/18/12.
@@ -8,16 +8,16 @@
 
 
 
-#import "BTThen.h"
+#import "BehavioralTestKit.h"
 
 
 
-@interface EnsureSomeOutcome : BTThen
+@interface EnsureTheStringIsPeanutButter : BTThen
 @end
 
 
 
-@implementation EnsureSomeOutcome
+@implementation EnsureTheStringIsPeanutButter
 
 
 
@@ -29,8 +29,9 @@
  */
 - (void)ensure:(id)self
 {
-    
-    STAssertTrue(YES, @"Test something");
+    NSString *theString = [self valueForKey:@"theString"];
+    NSString *expectedString = @"Peanut Butter";
+    STAssertTrue([theString isEqualToString:expectedString], @"'%@' should equal '%@'", theString, expectedString);
 }
 
 
