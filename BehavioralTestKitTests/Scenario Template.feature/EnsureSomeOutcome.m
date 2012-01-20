@@ -1,18 +1,23 @@
 //
-//  BTThen.h
-//  Locations
+//  EnsureSomeOutcome.m
+//  BehavioralTestKit
 //
-//  Created by Michael Fleet on 1/16/12.
+//  Created by Michael Fleet on 1/18/12.
 //  Copyright (c) 2012 Michael R. Fleet. All rights reserved.
 //
 
 
 
-#import "BTFragment.h"
+#import "BTThen.h"
 
 
 
-@interface BTThen : BTFragment
+@interface EnsureSomeOutcome : BTThen
+@end
+
+
+
+@implementation EnsureSomeOutcome
 
 
 
@@ -22,8 +27,11 @@
  * thereby tricking any ST assertion macros run here into executing in the
  * SenTestCase subclass' scope.
  */
-- (void)ensure:(id)me;
-
+- (void)ensure:(id)self
+{
+    
+    STAssertTrue(YES, @"Test something");
+}
 
 
 @end

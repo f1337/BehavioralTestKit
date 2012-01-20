@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC61EFDC14C8E5FA0038A162 /* BehavioralTestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1E9414C7C017005EDB1A /* BehavioralTestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEB1E9014C7C017005EDB1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E8F14C7C017005EDB1A /* Foundation.framework */; };
 		ACEB1E9614C7C017005EDB1A /* BehavioralTestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1E9514C7C017005EDB1A /* BehavioralTestKit.m */; };
 		ACEB1E9E14C7C017005EDB1A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E9D14C7C017005EDB1A /* SenTestingKit.framework */; };
@@ -14,7 +15,6 @@
 		ACEB1EA114C7C017005EDB1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E8F14C7C017005EDB1A /* Foundation.framework */; };
 		ACEB1EA414C7C017005EDB1A /* libBehavioralTestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E8C14C7C017005EDB1A /* libBehavioralTestKit.a */; };
 		ACEB1EAA14C7C017005EDB1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACEB1EA814C7C017005EDB1A /* InfoPlist.strings */; };
-		ACEB1EAD14C7C017005EDB1A /* BehavioralTestKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1EAC14C7C017005EDB1A /* BehavioralTestKitTests.m */; };
 		ACEB1ECB14C7C110005EDB1A /* BTFragment.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1EBF14C7C110005EDB1A /* BTFragment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEB1ECC14C7C110005EDB1A /* BTFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1EC014C7C110005EDB1A /* BTFragment.m */; };
 		ACEB1ECD14C7C110005EDB1A /* BTGiven.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1EC114C7C110005EDB1A /* BTGiven.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,9 +25,13 @@
 		ACEB1ED214C7C110005EDB1A /* BTThen.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1EC614C7C110005EDB1A /* BTThen.m */; };
 		ACEB1ED314C7C110005EDB1A /* BTWhen.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1EC714C7C110005EDB1A /* BTWhen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEB1ED414C7C110005EDB1A /* BTWhen.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1EC814C7C110005EDB1A /* BTWhen.m */; };
-		ACEB1ED514C7C110005EDB1A /* NSEntityDescription+BTGherkin.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1EC914C7C110005EDB1A /* NSEntityDescription+BTGherkin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEB1ED514C7C110005EDB1A /* NSEntityDescription+BTGherkin.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEB1EC914C7C110005EDB1A /* NSEntityDescription+BTGherkin.h */; settings = {ATTRIBUTES = (); }; };
 		ACEB1ED614C7C110005EDB1A /* NSEntityDescription+BTGherkin.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1ECA14C7C110005EDB1A /* NSEntityDescription+BTGherkin.m */; };
 		ACEB1ED814C7C29C005EDB1A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB1E9D14C7C017005EDB1A /* SenTestingKit.framework */; };
+		ACEB1F3914C7CD69005EDB1A /* SomeInitialContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1F3814C7CD69005EDB1A /* SomeInitialContext.m */; };
+		ACEB1F3D14C7CD84005EDB1A /* AnEventOccurs.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1F3C14C7CD84005EDB1A /* AnEventOccurs.m */; };
+		ACEB1F4014C7CDA3005EDB1A /* EnsureSomeOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1F3F14C7CDA3005EDB1A /* EnsureSomeOutcome.m */; };
+		ACEB1F4314C7CDCB005EDB1A /* ScenarioTemplateFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB1F4214C7CDCB005EDB1A /* ScenarioTemplateFeature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,6 @@
 		ACEB1E9F14C7C017005EDB1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ACEB1EA714C7C017005EDB1A /* BehavioralTestKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BehavioralTestKitTests-Info.plist"; sourceTree = "<group>"; };
 		ACEB1EA914C7C017005EDB1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ACEB1EAB14C7C017005EDB1A /* BehavioralTestKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BehavioralTestKitTests.h; sourceTree = "<group>"; };
-		ACEB1EAC14C7C017005EDB1A /* BehavioralTestKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehavioralTestKitTests.m; sourceTree = "<group>"; };
 		ACEB1EBF14C7C110005EDB1A /* BTFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFragment.h; sourceTree = "<group>"; };
 		ACEB1EC014C7C110005EDB1A /* BTFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFragment.m; sourceTree = "<group>"; };
 		ACEB1EC114C7C110005EDB1A /* BTGiven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGiven.h; sourceTree = "<group>"; };
@@ -65,6 +67,10 @@
 		ACEB1EC814C7C110005EDB1A /* BTWhen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTWhen.m; sourceTree = "<group>"; };
 		ACEB1EC914C7C110005EDB1A /* NSEntityDescription+BTGherkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+BTGherkin.h"; sourceTree = "<group>"; };
 		ACEB1ECA14C7C110005EDB1A /* NSEntityDescription+BTGherkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+BTGherkin.m"; sourceTree = "<group>"; };
+		ACEB1F3814C7CD69005EDB1A /* SomeInitialContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SomeInitialContext.m; path = "Scenario Template.feature/SomeInitialContext.m"; sourceTree = "<group>"; };
+		ACEB1F3C14C7CD84005EDB1A /* AnEventOccurs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnEventOccurs.m; path = "Scenario Template.feature/AnEventOccurs.m"; sourceTree = "<group>"; };
+		ACEB1F3F14C7CDA3005EDB1A /* EnsureSomeOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnsureSomeOutcome.m; path = "Scenario Template.feature/EnsureSomeOutcome.m"; sourceTree = "<group>"; };
+		ACEB1F4214C7CDCB005EDB1A /* ScenarioTemplateFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScenarioTemplateFeature.m; path = "Scenario Template.feature/ScenarioTemplateFeature.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,16 +131,16 @@
 			children = (
 				ACEB1E9414C7C017005EDB1A /* BehavioralTestKit.h */,
 				ACEB1E9514C7C017005EDB1A /* BehavioralTestKit.m */,
-				ACEB1EBF14C7C110005EDB1A /* BTFragment.h */,
-				ACEB1EC014C7C110005EDB1A /* BTFragment.m */,
-				ACEB1EC114C7C110005EDB1A /* BTGiven.h */,
-				ACEB1EC214C7C110005EDB1A /* BTGiven.m */,
 				ACEB1EC314C7C110005EDB1A /* BTScenario.h */,
 				ACEB1EC414C7C110005EDB1A /* BTScenario.m */,
-				ACEB1EC514C7C110005EDB1A /* BTThen.h */,
-				ACEB1EC614C7C110005EDB1A /* BTThen.m */,
+				ACEB1EC114C7C110005EDB1A /* BTGiven.h */,
+				ACEB1EC214C7C110005EDB1A /* BTGiven.m */,
 				ACEB1EC714C7C110005EDB1A /* BTWhen.h */,
 				ACEB1EC814C7C110005EDB1A /* BTWhen.m */,
+				ACEB1EC514C7C110005EDB1A /* BTThen.h */,
+				ACEB1EC614C7C110005EDB1A /* BTThen.m */,
+				ACEB1EBF14C7C110005EDB1A /* BTFragment.h */,
+				ACEB1EC014C7C110005EDB1A /* BTFragment.m */,
 				ACEB1EC914C7C110005EDB1A /* NSEntityDescription+BTGherkin.h */,
 				ACEB1ECA14C7C110005EDB1A /* NSEntityDescription+BTGherkin.m */,
 				ACEB1E9214C7C017005EDB1A /* Supporting Files */,
@@ -154,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				ACEB1ED914C7C325005EDB1A /* Scenario Template.feature */,
-				ACEB1EAB14C7C017005EDB1A /* BehavioralTestKitTests.h */,
-				ACEB1EAC14C7C017005EDB1A /* BehavioralTestKitTests.m */,
 				ACEB1EA614C7C017005EDB1A /* Supporting Files */,
 			);
 			path = BehavioralTestKitTests;
@@ -173,6 +177,10 @@
 		ACEB1ED914C7C325005EDB1A /* Scenario Template.feature */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB1F4214C7CDCB005EDB1A /* ScenarioTemplateFeature.m */,
+				ACEB1F3814C7CD69005EDB1A /* SomeInitialContext.m */,
+				ACEB1F3C14C7CD84005EDB1A /* AnEventOccurs.m */,
+				ACEB1F3F14C7CDA3005EDB1A /* EnsureSomeOutcome.m */,
 			);
 			name = "Scenario Template.feature";
 			sourceTree = "<group>";
@@ -184,9 +192,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC61EFDC14C8E5FA0038A162 /* BehavioralTestKit.h in Headers */,
+				ACEB1ECF14C7C110005EDB1A /* BTScenario.h in Headers */,
 				ACEB1ECB14C7C110005EDB1A /* BTFragment.h in Headers */,
 				ACEB1ECD14C7C110005EDB1A /* BTGiven.h in Headers */,
-				ACEB1ECF14C7C110005EDB1A /* BTScenario.h in Headers */,
 				ACEB1ED114C7C110005EDB1A /* BTThen.h in Headers */,
 				ACEB1ED314C7C110005EDB1A /* BTWhen.h in Headers */,
 				ACEB1ED514C7C110005EDB1A /* NSEntityDescription+BTGherkin.h in Headers */,
@@ -305,7 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEB1EAD14C7C017005EDB1A /* BehavioralTestKitTests.m in Sources */,
+				ACEB1F3914C7CD69005EDB1A /* SomeInitialContext.m in Sources */,
+				ACEB1F3D14C7CD84005EDB1A /* AnEventOccurs.m in Sources */,
+				ACEB1F4014C7CDA3005EDB1A /* EnsureSomeOutcome.m in Sources */,
+				ACEB1F4314C7CDCB005EDB1A /* ScenarioTemplateFeature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

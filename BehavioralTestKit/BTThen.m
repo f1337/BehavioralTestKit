@@ -16,9 +16,8 @@
 
 
 
-- (BOOL)ensure:(id)me
+- (void)ensure:(id)me
 {
-    return NO;
 }
 
 

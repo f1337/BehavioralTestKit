@@ -7,6 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BTScenario.h"
+#import "BTFragment.h"
+#import "BTThen.h"
+#import "BTWhen.h"
+#import "BTGiven.h"
+#import "NSEntityDescription+BTGherkin.h"
 
 @interface BehavioralTestKit : NSObject
 
