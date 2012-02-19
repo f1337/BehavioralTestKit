@@ -405,7 +405,6 @@
 				GCC_PREFIX_HEADER = "BehavioralTestKit/BehavioralTestKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -421,7 +420,6 @@
 				GCC_PREFIX_HEADER = "BehavioralTestKit/BehavioralTestKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
