@@ -15,6 +15,7 @@
 #import "BTThen.h"
 #import "BTWhen.h"
 #import "BTGiven.h"
+#import "NSEntityDescription+BTTestable.h"
 
 
 

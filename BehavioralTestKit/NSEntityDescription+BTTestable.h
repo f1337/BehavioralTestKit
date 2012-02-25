@@ -21,12 +21,12 @@
  * test target.
  *
  * Usage:
- * MYManagedObjectSubclass *instance = (MYManagedObjectSubclass *)[NSEntityDescription insertNewObjectForEntityForName:@"MYManagedObjectSubclass" andBundleForObject:self];
+ * MYManagedObjectSubclass *instance = (MYManagedObjectSubclass *)[NSEntityDescription insertNewObjectForEntityForName:@"MYManagedObjectSubclass" inManagedObjectContext:[NSEntityDescription sharedTestContextForClass:[MYTestCase class]]];
  *
  * Where "MYManagedObjectSubclass" is the class name of your NSManagedObject subclass,
- * and "self" is an instance of your test class (subclass of SenTestCase, for ex.).
+ * and "MYTestCase" is the class name of your test class (subclass of SenTestCase, for ex.).
  */
-+ (id)insertNewObjectForEntityForName:(NSString *)entityName andBundleForObject:(NSObject *)object;
++ (NSManagedObjectContext *)sharedTestContextForClass:(Class)klass;
 
 
 
