@@ -8,10 +8,6 @@
 
 
 
-#import <SenTestingKit/SenTestingKit.h>
-
-
-
 @interface BTFragment : NSObject
 
 

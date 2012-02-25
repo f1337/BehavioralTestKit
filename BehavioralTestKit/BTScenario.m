@@ -9,9 +9,6 @@
 
 
 #import "BTScenario.h"
-#import "BTGiven.h"
-#import "BTWhen.h"
-#import "BTThen.h"
 
 
 
