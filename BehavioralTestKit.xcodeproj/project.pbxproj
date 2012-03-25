@@ -259,7 +259,7 @@
 		ACEB1E8314C7C017005EDB1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Michael R. Fleet";
 			};
 			buildConfigurationList = ACEB1E8614C7C017005EDB1A /* Build configuration list for PBXProject "BehavioralTestKit" */;
